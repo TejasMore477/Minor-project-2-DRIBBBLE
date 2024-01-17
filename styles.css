@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f8f7f4;
+}
+.page1{
+    height: 80vh;
+    width: 100%;
+    margin: 0.001px;
+    /* background-color: rgb(233, 153, 153); */
+}
+.page1 nav{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: mediumaquamarine; */
+    padding: 10px 50px ;
+    padding-top: 30px;
+}
+nav .part1{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+nav .part1 h4{
+    font-size: 0.9vw;
+    font-weight: 600;
+}
+nav .part1 h4:hover{
+    cursor: pointer;
+}
+nav img{
+    height:110px;
+}
+nav img:hover{
+    cursor: pointer;
+}
+nav .part2{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* background-color: rosybrown; */
+}
+nav .part2 button{
+    padding: 12px 18px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0px 10px;
+}
+nav .part2 button:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.527);
+}
+nav .part2 button:nth-child(1){
+    background-color: transparent;
+    color: black;
+}
+.page1 .content{
+    height:calc(80vh - 10%);
+    width: 100%;
+    /* background-color: rgb(203, 161, 242); */
+    padding-top: 100px;
+}
+.content h3{
+    background-color: salmon;
+    width: fit-content;
+    padding: 10px 19px;
+    border-radius: 30px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+}
+.content h1{
+    font-size: 75px;
+    font-weight: 800;
+    font-family: "Mona Sans Extralight";
+    text-align: center;
+    margin: 35px 0px;
+    line-height: 75px;
+}
+.content h4{
+    font-size: 17px;
+    text-align: center;
+    font-weight: 400;
+}
+.content button{
+    padding: 12px 18px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 30px 0px;
+}
+.content button:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.727);
+}
+.video-anim{
+    height: 50vh;
+    width: 100%;
+    /* background-color: mediumpurple; */
+    padding: 10px 0; 
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.video-anime:-webkit-scrollbar{
+    display: none;
+}
+.video-anim .section{
+    flex-shrink: 0;
+    height: 100%;
+    width: 200%;
+    padding-left:25px ;
+    animation-name: anime;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes anime{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 3px));
+    }
+} 
+.section .elem{
+    height: 100%;
+    width: 9%;
+    display: inline-block;
+    margin-right: 26px;
+    border-radius: 40px;
+    position: relative;
+    overflow: hidden;
+} 
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 40px;
+}
+.section .elem .overlap{
+    height: 30%;
+    width: 100%;
+    /* background-color: indianred; */
+    position: absolute;
+    bottom: 0%;
+    padding: 0px 20px;
+    color: white;
+}
+.overlap h4{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+.btns button{
+    margin-right: 4px;
+    padding: 5px 9px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 40px;
+}
+.btns button:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.336);
+}
+.page2{
+    height: 420%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: rosybrown; */
+}
+.page2 h1{
+    font-size: 55px;
+    font-weight: 800;
+    font-family: "Mona Sans Extralight";
+    text-align: center;
+    margin-top: 80px;
+    line-height: 75px;
+}
+.page2 .components{
+    height: 90%;
+    width: 100%;
+    /* background-color: sandybrown; */
+    padding: 30px 20px 0px 40px;
+}
+.components .boxa{
+    height: 270px;
+    width: 320px;
+    background-color: aquamarine;
+    display: inline-block;
+    margin: 18px ;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.components .boxa:hover{
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.boxa:hover .sections{
+    bottom: 0%;
+}
+.boxa img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.boxa .sections{
+    height: 25%;
+    width: 100%;
+    background:linear-gradient(to top,rgba(0, 0, 0, 0.605),rgba(0, 0, 0, 0.112),transparent);
+    position: absolute;
+    /* background-color: red; */
+    bottom: -25%;
+    padding: 30px 30px 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all ease 0.3s;
+}
+.sections h5{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+.sections i{
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: white;
+    padding: 5px 4px;
+    border-radius: 30px;
+}
+.boxa .sections h5:hover{
+    cursor: pointer;
+}
+.boxa .sections i:hover{
+    cursor: pointer;
+}
+.page2 button{
+    border: 1.5px solid black;
+    border-radius: 40px;
+    background-color: transparent;
+    margin: 40px 0px;
+    padding: 14px 22px;
+    font-size: 18px;
+    font-weight: 500;
+    align-self: center;
+}
+.page2 button:hover{
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.17) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.241) 0px 18px 36px -18px inset;
+}
+.page3{
+    height: 120%;
+    width: 100%;
+    padding-top: 45px;
+    background-color: hsl(43, 100%, 74%);
+}
+.page3 h1{
+    font-size: 75px;
+    font-weight: 800;
+    font-family: "Mona Sans Extralight";
+    text-align: center;
+    margin: 35px 0px;
+    line-height: 75px;
+    padding: 40px;
+}
+.page3 h3{
+    font-size: 22px;
+    font-weight: 800;
+    font-family: "Mona Sans Extralight";
+    text-align: center;
+    line-height: 26px;
+    padding-bottom: 40px;
+}
+.page3 .btn-sect{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 30px;
+    /* background-color: red; */
+}
+.btn-sect button{
+    border: none;
+    border-radius: 40px;
+    background-color: transparent;
+    margin: 40px 0px;
+    padding: 17px 24px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.btn-sect button:nth-last-child(1){
+    background-color: white;
+}
+.btn-sect button:nth-last-child(1):hover{
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.17) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.241) 0px 18px 36px -18px inset;
+}
+.btn-sect button:nth-last-child(2){
+    background-color: #0D0C22;
+    color: white;
+}
+.btn-sect button:nth-last-child(2):hover{
+    background-color: #565564;
+    cursor: pointer;
+}
+.page3 h2{
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+}
+h2 a{
+    color: black;
+}
+footer{
+    height: 90%;
+    width: 100%;
+    padding: 30px 0px;
+    /* background-color: chocolate; */
+}
+footer .anim-sec{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.anim-sec .section{
+    flex-shrink: 0;
+    height: 150%;
+    width: 130%;
+    white-space: nowrap;
+    padding: 0px 15px;
+    display: inline-block;
+    animation-name: anime;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.anim-sec .section .box{
+    height: 100%;
+    width: 11.86%;
+    /* background-color: #565564; */
+    display: inline-block;
+    overflow: hidden;
+    margin-right:12px ;
+}
+.section .box img{
+    height: 53%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    transition: all ease 0.5s;
+}
+.box img:hover{
+    cursor: pointer;
+    height: 55%;
+    width: 102%;
+}
+.box h5{
+    padding-top: 5px;
+}
+.box h5:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+/* .anim-sec .a{background-color: red;} */
+/* .anim-sec .b{background-color: yellow;} */
+.footer-bar{
+    height: 17%;
+    width: 100%;
+    /* background-color: firebrick; */
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0% 7%;
+}
+.footer-bar img{
+    height: 140%;
+    width: 13%;
+    /* background-color: mediumseagreen; */
+}
+.footer-bar img:hover{
+    cursor: pointer;
+}
+.footer-bar .options{
+    height: 100%;
+    width:72%;
+    /* background-color: mediumorchid; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 4%;
+}
+.footer-bar .options h4{
+    font-size: 13px;
+    font-weight: 600;
+}
+.footer-bar .options h4:hover{
+    cursor: pointer;
+}
+.footer-bar .icons{
+    /* background-color: yellow; */
+    height: 100%;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.icons i{
+    font-size: 22px;
+}
+.icons i:hover{
+    cursor: pointer;
+}
+.footer-bar2{
+    height: 17%;
+    width: 100%;
+    /* background-color: rgb(226, 99, 99); */
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+.footer-bar2 .parta{
+    height: 100%;
+    width: 25%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.parta h5{
+    font-weight: 400;
+}
+.parta h5:hover{
+    cursor: pointer;
+}
+.footer-bar2 .partb{
+    height: 100%;
+    width: 35%;
+    /* background-color: royalblue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.partb h5{
+    font-weight: 400;
+}
+.partb h5:hover{
+    cursor: pointer;
+}
