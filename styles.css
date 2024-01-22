@@ -14,34 +14,33 @@ html,body{
     height: 80vh;
     width: 100%;
     margin: 0.001px;
-    /* background-color: rgb(233, 153, 153); */
 }
 .page1 nav{
-    height: 10%;
+    height: 11%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* background-color: mediumaquamarine; */
-    padding: 10px 50px ;
-    padding-top: 30px;
+    padding: 1.4rem 3.2rem 0 3.2rem;
 }
 nav .part1{
-    width: 30%;
+    width: 36%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* background-color: red; */
 }
 nav .part1 h4{
-    font-size: 0.9vw;
+    font-size: 0.89rem;
     font-weight: 600;
+}
+nav .part1 i{
+    display: none;
 }
 nav .part1 h4:hover{
     cursor: pointer;
 }
 nav img{
-    height:110px;
+    height: 6.9rem;
 }
 nav img:hover{
     cursor: pointer;
@@ -51,7 +50,6 @@ nav .part2{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    /* background-color: rosybrown; */
 }
 nav .part2 button{
     padding: 12px 18px;
@@ -59,9 +57,12 @@ nav .part2 button{
     color: white;
     border: none;
     border-radius: 30px;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 600;
     margin: 0px 10px;
+}
+nav .part2 i{
+    display: none;
 }
 nav .part2 button:hover{
     cursor: pointer;
@@ -74,7 +75,6 @@ nav .part2 button:nth-child(1){
 .page1 .content{
     height:calc(80vh - 10%);
     width: 100%;
-    /* background-color: rgb(203, 161, 242); */
     padding-top: 100px;
 }
 .content h3{
@@ -118,9 +118,8 @@ nav .part2 button:nth-child(1){
     background-color: rgba(0, 0, 0, 0.727);
 }
 .video-anim{
-    height: 50vh;
+    height: 51vh;
     width: 100%;
-    /* background-color: mediumpurple; */
     padding: 10px 0; 
     display: flex;
     flex-wrap: nowrap;
@@ -134,7 +133,7 @@ nav .part2 button:nth-child(1){
 .video-anim .section{
     flex-shrink: 0;
     height: 100%;
-    width: 200%;
+    width: 190%;
     padding-left:25px ;
     animation-name: anime;
     animation-duration: 30s;
@@ -151,9 +150,9 @@ nav .part2 button:nth-child(1){
 } 
 .section .elem{
     height: 100%;
-    width: 9%;
+    width: 9.15%;
     display: inline-block;
-    margin-right: 26px;
+    margin-right: 24px;
     border-radius: 40px;
     position: relative;
     overflow: hidden;
@@ -168,7 +167,6 @@ video{
 .section .elem .overlap{
     height: 30%;
     width: 100%;
-    /* background-color: indianred; */
     position: absolute;
     bottom: 0%;
     padding: 0px 20px;
@@ -192,11 +190,10 @@ video{
     background-color: rgba(0, 0, 0, 0.336);
 }
 .page2{
-    height: 420%;
+    height:auto;
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* background-color: rosybrown; */
 }
 .page2 h1{
     font-size: 55px;
@@ -209,13 +206,15 @@ video{
 .page2 .components{
     height: 90%;
     width: 100%;
-    /* background-color: sandybrown; */
-    padding: 30px 20px 0px 40px;
+    padding: 30px 40px 0px 30px;
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
 }
 .components .boxa{
     height: 270px;
+    height: 93%;
     width: 320px;
-    background-color: aquamarine;
+    width: 93%;
     display: inline-block;
     margin: 18px ;
     border-radius: 20px;
@@ -239,7 +238,6 @@ video{
     width: 100%;
     background:linear-gradient(to top,rgba(0, 0, 0, 0.605),rgba(0, 0, 0, 0.112),transparent);
     position: absolute;
-    /* background-color: red; */
     bottom: -25%;
     padding: 30px 30px 10px 30px;
     display: flex;
@@ -310,7 +308,6 @@ video{
     justify-content: center;
     gap: 30px;
     padding-bottom: 30px;
-    /* background-color: red; */
 }
 .btn-sect button{
     border: none;
@@ -348,7 +345,6 @@ footer{
     height: 90%;
     width: 100%;
     padding: 30px 0px;
-    /* background-color: chocolate; */
 }
 footer .anim-sec{
     height: 40%;
@@ -362,7 +358,7 @@ footer .anim-sec{
 .anim-sec .section{
     flex-shrink: 0;
     height: 150%;
-    width: 130%;
+    width: 150%;
     white-space: nowrap;
     padding: 0px 15px;
     display: inline-block;
@@ -373,8 +369,7 @@ footer .anim-sec{
 }
 .anim-sec .section .box{
     height: 100%;
-    width: 11.86%;
-    /* background-color: #565564; */
+    width: 11.78%;
     display: inline-block;
     overflow: hidden;
     margin-right:12px ;
@@ -404,7 +399,6 @@ footer .anim-sec{
 .footer-bar{
     height: 17%;
     width: 100%;
-    /* background-color: firebrick; */
     margin-top: 80px;
     display: flex;
     align-items: center;
@@ -414,7 +408,6 @@ footer .anim-sec{
 .footer-bar img{
     height: 140%;
     width: 13%;
-    /* background-color: mediumseagreen; */
 }
 .footer-bar img:hover{
     cursor: pointer;
@@ -422,7 +415,6 @@ footer .anim-sec{
 .footer-bar .options{
     height: 100%;
     width:72%;
-    /* background-color: mediumorchid; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -436,7 +428,6 @@ footer .anim-sec{
     cursor: pointer;
 }
 .footer-bar .icons{
-    /* background-color: yellow; */
     height: 100%;
     width: 15%;
     display: flex;
@@ -453,7 +444,6 @@ footer .anim-sec{
 .footer-bar2{
     height: 17%;
     width: 100%;
-    /* background-color: rgb(226, 99, 99); */
     margin-top: 60px;
     display: flex;
     align-items: center;
@@ -463,7 +453,6 @@ footer .anim-sec{
 .footer-bar2 .parta{
     height: 100%;
     width: 25%;
-    /* background-color: red; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -477,7 +466,6 @@ footer .anim-sec{
 .footer-bar2 .partb{
     height: 100%;
     width: 35%;
-    /* background-color: royalblue; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -487,4 +475,496 @@ footer .anim-sec{
 }
 .partb h5:hover{
     cursor: pointer;
+}
+
+/* Extra Small Devices (phones) */
+@media only screen and (max-width: 575px) {
+    .page1{
+        height: 85vh;
+    }
+    .page1 nav{
+        height: 11%;
+        width: 100%;
+        padding: 1.4rem 1rem 0 1.4rem;
+    }
+    nav .part1{
+        width: 30%;
+    }
+    nav .part1 h4{
+        display: none;
+    }
+    nav .part1 i{
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    nav img{
+        height: 6rem;
+    }
+    nav .part2{
+        width: 30%;
+    }
+    nav .part2 button{
+        padding: 10px 13px;
+        font-size: 12px;
+        font-weight: 500;
+        margin: 0 0 0 10px;
+    }
+    nav .part2 i{
+        display: block;
+        font-size: 24px;
+    }
+    nav .part2 button:nth-child(1){
+        display: none;
+    }
+    .page1 .content{
+        padding:60px 40px 0px 40px;
+    }
+    .content h3{
+        font-size: 13px;
+    }
+    .content h1{
+        font-size: 55px;
+        line-height: 60px;
+    }
+    .content h4{
+        font-size: 14px;
+    }
+    .content button{
+        padding: 10px 13px;
+        font-size: 13px;
+        font-weight: 500;
+        margin: 30px 0px 0px 0;
+    }
+    .video-anim{
+        height: 55vh;
+    }
+    .video-anim .section{
+        width: 670%;
+        padding-left:17px ;
+    } 
+    .video-anim .section:nth-child(2){
+        padding-left: 29px;
+    }
+    .section .elem{
+        width: 9.33%;
+        margin-right: 17px;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    } 
+    video{
+        border-radius: 20px;
+    }
+    .section .elem .overlap{
+        height: 23%;
+    }
+    .overlap h4{
+        font-size: 16px;
+    }
+    .page2 h1{
+        font-size: 50px;
+        margin-top: 50px;
+        line-height: 65px;
+    }
+    .page2 .components{
+        padding: 30px 30px 0px 7px;
+        grid-template-columns: repeat(2 ,1fr);
+    }
+    .boxa .sections{
+        height: 20%;
+        bottom: -32%;
+        padding: 30px 15px 20px 15px;
+    }
+    .sections h5{
+        font-size: 15px;
+    }
+    .sections i{
+        font-size: 13px;
+        font-weight: 700;
+    }
+    .page2 button{
+        padding: 10px 19px;
+        font-size: 13px;
+    }
+    .page3{
+        height: 100%;
+        padding-top: 0px;
+    }
+    .page3 h1{
+        font-size: 55px;
+        margin: 0px 0px;
+        line-height: 65px;
+        padding: 40px 30px;
+    }
+    .page3 h3{
+        font-size: 19px;
+        padding: 0 60px 40px 60px;
+    }
+    .btn-sect button{
+        padding: 13px 20px;
+        font-size: 13px;
+    }
+    .page3 h2{
+        font-size: 20px;
+    }
+    footer{
+        height: 72%;
+        padding: 30px 0px;
+    }
+    footer .anim-sec{
+        height: 43%;
+
+    }
+    .anim-sec .section{
+        height: 157%;
+        width: 415%;
+        animation-name: anime;
+    } 
+    .anim-sec .section .box{
+        width: 11.78%; 
+    } 
+    .footer-bar{
+        height: 40%;
+        margin-top: 30px;
+        flex-direction: column;
+        padding: 0% 2%;
+    }
+    .footer-bar img{
+        width: 26%;
+    }
+    .footer-bar .options{
+        width:100%;
+        padding:0 1%;
+    }
+    .footer-bar .options h4{
+        font-size: 10px;
+        font-weight: 500;
+    }
+    .footer-bar .icons{
+        height:90%;
+        width: 25%;
+    }
+    .icons i{
+        font-size: 19px;
+    }
+    .footer-bar2{
+        height: 30%;
+        width: 100%;
+        margin-top: 60px;
+        flex-direction: column;
+        padding: 0 30px ;
+    }
+    .footer-bar2 .parta{
+        height: 40%;
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+    }
+    .parta h5{
+        font-weight: 500;
+    }
+    .footer-bar2 .partb{
+        height: 40%;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .partb h5{
+        font-weight: 500;
+    }
+}
+  
+/* Small Devices (portrait tablets and small desktops) */
+@media only screen and (min-width: 576px) and (max-width: 767px) { 
+    .page1 nav{
+        padding: 1rem 2rem 0 2rem;
+    }
+    nav .part1{
+        width: 30%;
+    }
+    nav .part1 h4{
+        display: none;
+    }
+    nav .part1 i{
+        display: block;
+        font-size: 21px;
+    }
+    nav .part1 i:hover{
+        cursor: pointer;
+    }
+    nav img{
+        height: 6.5rem;
+    }
+    nav .part2 i{
+        display: block;
+        font-size: 25px;
+        font-weight: 500;
+    }
+    nav .part2 i:hover{
+        cursor: pointer;
+    }
+    nav .part2 button:nth-child(1){
+        display: none;
+    }
+    .content h1{
+        padding: 0 15px;
+        font-size: 67px;
+        line-height: 70px;
+    }
+    .video-anim{
+        overflow-x: hidden;
+    }
+    .video-anim .section{
+        width :400%;
+        padding-left:23px ;
+        animation-name: anime;
+    }
+    .section .elem{
+        width: 9.28%;
+        margin-right: 20px;
+    } 
+    video{
+        border-radius: 30px;
+    }
+    .section .elem .overlap{
+        padding: 0px 10px;
+    }
+    .page2 .components{
+        grid-template-columns: repeat(2 ,1fr);
+    }
+    .boxa .sections{
+        padding: 30px 30px 20px 30px;
+    }
+    .sections h5{
+        font-size: 16px;
+    }
+    .sections i{
+        font-size: 15px;
+    }
+    .page2 button{
+        padding: 10px 22px;
+        font-size: 15px;
+    }
+    .page3{
+        height: 100%;
+        padding-top: 50px;
+    }
+    .page3 h1{
+        font-size: 60px;
+        margin: 0px 0px;
+        line-height: 70px;
+        padding-bottom: 40px;
+    }
+    .page3 h3{
+        font-size: 19px;
+    }
+    .btn-sect button{
+        padding: 15px 24px;
+        font-size: 15px;
+    }
+    .page3 h2{
+        font-size: 20px;
+    }
+    footer{
+        height: 89%;
+        padding: 30px 0 0 0; 
+    }
+    footer .anim-sec{
+        height: 43%;
+    }
+    .anim-sec .section{
+        width: 235%;
+    }
+    .anim-sec .section .box{
+        width: 11.84%;
+    }
+    .footer-bar{
+        height: auto;
+        margin-top: 30px;
+        flex-direction: column;
+        padding: 0 0;
+    }
+    .footer-bar img{
+        height: 0%;
+        width: 17%;
+        padding: 0;
+    }
+    .footer-bar .options{
+        width:90%;
+        padding: 0 0 15px 0;
+    }
+    .footer-bar .options h4{
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .footer-bar2{
+        height: 12%;
+        margin-top: 40px;
+
+        flex-direction: column;
+    }
+    .footer-bar2 .parta{
+        width: 55%;
+    }
+    .footer-bar2 .partb{
+        width: 80%;
+    }
+}
+/* Medium Devices (landscape tablets and medium-sized desktops) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    nav .part1{
+        width: 30%;
+    }
+    nav .part1 h4{
+        display: none;
+    }
+    nav .part1 i{
+        display: block;
+        font-size: 23px;
+    }
+    nav .part1 i:hover{
+        cursor: pointer;
+    }
+    nav .part2{
+        width: 35%;
+        gap: 15px;
+    }
+    nav .part2 i{
+        display: block;
+        font-size: 30px;
+    }
+    nav .part2 i:hover{
+        cursor: pointer;
+    }
+    nav .part2 button:nth-child(1){
+        display: none;
+    }
+    .content h1{
+        font-size: 70px;
+        line-height: 70px;
+    }
+    .video-anim .section{
+        width: 255%;
+        padding-left: 18px;
+    }
+    .section .elem{
+        width: 9.345%;
+        margin-right: 13px;
+    } 
+    .section .elem .overlap{
+        padding: 5px 12px;
+    }
+    .btns button{
+        padding: 4px 7px;
+        font-size: 12px;
+    }
+    .page2 .components{
+        grid-template-columns: repeat(2 ,1fr);
+    }
+    .page3{
+        padding: 45px 30px;
+    }
+    footer .anim-sec{
+        height: 43%;
+    }
+    .anim-sec .section{
+        width: 235%;
+    }
+    .anim-sec .section .box{
+        width: 11.84%;
+    }
+    .footer-bar{
+        height: auto;
+        margin-top: 30px;
+        flex-direction: column;
+        padding: 0 0;
+    }
+    .footer-bar img{
+        height: 0%;
+        width: 20%;
+        padding: 0;
+    }
+    .footer-bar .options{
+        width:90%;
+        padding: 0 0 15px 0;
+    }
+    .footer-bar .options h4{
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .footer-bar2{
+        height: fit-content;
+        margin-top: 40px;
+        padding: 0 40px;
+    }
+    .footer-bar2 .parta{
+        height: fit-content;
+        width: 45%;
+    }
+    .footer-bar2 .partb{
+        height: auto;
+        width: 53%;
+    }
+}
+/* Large Devices (large desktops) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    nav .part1{
+        width: 37%;
+    }
+    nav .part1 h4{
+        font-size: 0.8rem;
+    }
+    nav img{
+        margin-right: 13%;
+    }
+    nav .part2{
+        width: 25%;
+    }
+    .video-anim .section{
+        width: 250%;
+    }
+    .section .elem{
+        width: 9.323%;
+        margin-right: 15px;
+    } 
+    .page2 .components{
+        padding: 30px 30px 0px 10px;
+    }
+    .boxa .sections{
+        padding: 30px 20px 10px 20px;
+    }
+    .sections h5{
+        font-size: 16px;
+    }
+    .sections i{
+        font-size: 16px;
+    }
+    .anim-sec .section{
+        width: 156%;
+    }
+    .anim-sec .section .box{
+        width: 11.68%;
+    }
+    .footer-bar{
+        padding: 0% 6%;
+    }
+    .footer-bar img{
+        width: 13.5%;
+    }
+    .footer-bar .options{
+        width:73%;
+        padding:0 3%;
+    }
+    .footer-bar .options h4{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .footer-bar2{
+        padding: 0 8%;
+    }
+    .footer-bar2 .parta{
+        width: 35%;
+    }
+    .footer-bar2 .partb{
+        width: 45%;
+    }
 }
