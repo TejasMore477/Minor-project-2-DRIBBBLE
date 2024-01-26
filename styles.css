@@ -591,13 +591,13 @@ footer .anim-sec{
         padding-top: 0px;
     }
     .page3 h1{
-        font-size: 55px;
+        font-size: 45px;
         margin: 0px 0px;
         line-height: 65px;
-        padding: 40px 30px;
+        padding: 40px 30px 30px 30px;
     }
     .page3 h3{
-        font-size: 19px;
+        font-size: 16px;
         padding: 0 60px 40px 60px;
     }
     .btn-sect button{
