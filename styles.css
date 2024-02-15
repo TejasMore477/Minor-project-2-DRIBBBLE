@@ -211,9 +211,7 @@ video{
     grid-template-columns: repeat(4 ,1fr);
 }
 .components .boxa{
-    height: 270px;
     height: 93%;
-    width: 320px;
     width: 93%;
     display: inline-block;
     margin: 18px ;
@@ -344,7 +342,7 @@ h2 a{
 footer{
     height: 90%;
     width: 100%;
-    padding: 30px 0px;
+    padding-top: 30px;
 }
 footer .anim-sec{
     height: 40%;
@@ -394,8 +392,6 @@ footer .anim-sec{
     cursor: pointer;
     text-decoration: underline;
 }
-/* .anim-sec .a{background-color: red;} */
-/* .anim-sec .b{background-color: yellow;} */
 .footer-bar{
     height: 17%;
     width: 100%;
@@ -480,52 +476,53 @@ footer .anim-sec{
 /* Extra Small Devices (phones) */
 @media only screen and (max-width: 575px) {
     .page1{
-        height: 85vh;
+        height: fit-content;
     }
     .page1 nav{
         height: 11%;
         width: 100%;
-        padding: 1.4rem 1rem 0 1.4rem;
+        padding: 0rem 1rem 0 1.4rem;
     }
     nav .part1{
-        width: 30%;
+        width: 20%;
     }
     nav .part1 h4{
         display: none;
     }
     nav .part1 i{
         display: block;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 600;
     }
     nav img{
-        height: 6rem;
+        height: 5.2rem;
     }
     nav .part2{
-        width: 30%;
+        width: 33%;
     }
     nav .part2 button{
-        padding: 10px 13px;
+        padding: 8px 10px;
         font-size: 12px;
         font-weight: 500;
         margin: 0 0 0 10px;
     }
     nav .part2 i{
         display: block;
-        font-size: 24px;
+        font-size: 22px;
     }
     nav .part2 button:nth-child(1){
         display: none;
     }
     .page1 .content{
-        padding:60px 40px 0px 40px;
+        padding:40px 40px 0px 40px;
     }
     .content h3{
+        text-align: center;
         font-size: 13px;
     }
     .content h1{
-        font-size: 55px;
-        line-height: 60px;
+        font-size: 45px;
+        line-height: 50px;
     }
     .content h4{
         font-size: 14px;
@@ -544,7 +541,8 @@ footer .anim-sec{
         padding-left:17px ;
     } 
     .video-anim .section:nth-child(2){
-        padding-left: 29px;
+        margin-left: 29px;
+        padding-left:29px;
     }
     .section .elem{
         width: 9.33%;
@@ -556,10 +554,11 @@ footer .anim-sec{
         border-radius: 20px;
     }
     .section .elem .overlap{
-        height: 23%;
+        height: 26%;
+        padding: 0px 10px;
     }
     .overlap h4{
-        font-size: 16px;
+        font-size: 14px;
     }
     .page2 h1{
         font-size: 50px;
@@ -587,8 +586,9 @@ footer .anim-sec{
         font-size: 13px;
     }
     .page3{
-        height: 100%;
+        height: fit-content;
         padding-top: 0px;
+        padding-bottom:30px;
     }
     .page3 h1{
         font-size: 45px;
@@ -602,7 +602,8 @@ footer .anim-sec{
     }
     .btn-sect button{
         padding: 13px 20px;
-        font-size: 13px;
+        font-size: 12px;
+        margin: 20px 0px;
     }
     .page3 h2{
         font-size: 18px;
@@ -612,20 +613,22 @@ footer .anim-sec{
         padding: 30px 0px;
     }
     footer .anim-sec{
-        height: 43%;
-
+        height: 45%;
+        padding-bottom:10px;
     }
     .anim-sec .section{
         height: 157%;
         width: 415%;
-        animation-name: anime;
     } 
+    .anim-sec .section:nth-last-child(1){
+        margin-left: 15px;
+    }
     .anim-sec .section .box{
         width: 11.78%; 
     } 
     .footer-bar{
-        height: 40%;
-        margin-top: 30px;
+        height: 45%;
+        margin: 30px 0;
         flex-direction: column;
         padding: 0% 2%;
     }
@@ -635,9 +638,13 @@ footer .anim-sec{
     .footer-bar .options{
         width:100%;
         padding:0 1%;
+        flex-wrap: wrap;
+        gap: 11px;
+        margin-bottom: 18px;
+        padding: 0 20px;
     }
     .footer-bar .options h4{
-        font-size: 10px;
+        font-size: 12px;
         font-weight: 500;
     }
     .footer-bar .icons{
@@ -650,9 +657,10 @@ footer .anim-sec{
     .footer-bar2{
         height: 30%;
         width: 100%;
-        margin-top: 60px;
+        margin-top: 0px;
         flex-direction: column;
-        padding: 0 30px ;
+        padding: 0 20px ;
+        gap: 20px;
     }
     .footer-bar2 .parta{
         height: 40%;
@@ -666,9 +674,11 @@ footer .anim-sec{
     .footer-bar2 .partb{
         height: 40%;
         width: 100%;
+        flex-wrap: wrap;
         margin-bottom: 40px;
     }
     .partb h5{
+        font-size: 12px;
         font-weight: 500;
     }
 }
